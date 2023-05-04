@@ -1,6 +1,6 @@
 resource "aws_instance" "httpd_server" {
   count = var.httpd_want == true ? var.httpd_count : 0
-  ami           = "ami-03a933af70fa97ad2"
+  ami           = "ami-0aa2b7722dc1b5612"
   instance_type = var.instance_type
   key_name      = var.my_key_name
   
